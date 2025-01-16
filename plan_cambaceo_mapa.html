@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ee8609e809df1fdd067c33dc4fe78b4c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ee8609e809df1fdd067c33dc4fe78b4c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ee8609e809df1fdd067c33dc4fe78b4c = L.map(
+                "map_ee8609e809df1fdd067c33dc4fe78b4c",
+                {
+                    center: [19.42828631909119, -99.14203208220889],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6f49c088a9e94df7e4128cb3cef735d9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ee8609e809df1fdd067c33dc4fe78b4c);
+        
+    
+            var marker_488241816a8a377d01ba58e0867e345c = L.marker(
+                [19.601838, -99.036507],
+                {}
+            ).addTo(map_ee8609e809df1fdd067c33dc4fe78b4c);
+        
+    
+            marker_488241816a8a377d01ba58e0867e345c.bindTooltip(
+                `<div>
+                     Ecatepec (Inicio)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df7bbffa2c66e2f515ac3e9239fc8384 = L.marker(
+                [19.4231, -99.1444],
+                {}
+            ).addTo(map_ee8609e809df1fdd067c33dc4fe78b4c);
+        
+    
+            marker_df7bbffa2c66e2f515ac3e9239fc8384.bindTooltip(
+                `<div>
+                     Metro Salto del Agua
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f02d75dc3488d977e53ad105c1e3e80a = L.marker(
+                [19.42828631909119, -99.14203208220889],
+                {}
+            ).addTo(map_ee8609e809df1fdd067c33dc4fe78b4c);
+        
+    
+            marker_f02d75dc3488d977e53ad105c1e3e80a.bindTooltip(
+                `<div>
+                     Plaza Teresa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba3826c5f84833ebdb17bb8ee1b37583 = L.marker(
+                [19.4236, -99.1532],
+                {}
+            ).addTo(map_ee8609e809df1fdd067c33dc4fe78b4c);
+        
+    
+            marker_ba3826c5f84833ebdb17bb8ee1b37583.bindTooltip(
+                `<div>
+                     Metro Balderas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b1c8463bcda36ae39054be884053bc9 = L.marker(
+                [19.428361719127313, -99.14890233500226],
+                {}
+            ).addTo(map_ee8609e809df1fdd067c33dc4fe78b4c);
+        
+    
+            marker_5b1c8463bcda36ae39054be884053bc9.bindTooltip(
+                `<div>
+                     Plaza Teresa López
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_875d2cbf3e61e517595e8c2b58e44c58 = L.polyline(
+                [[19.601838, -99.036507], [19.4231, -99.1444]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee8609e809df1fdd067c33dc4fe78b4c);
+        
+    
+            poly_line_875d2cbf3e61e517595e8c2b58e44c58.bindTooltip(
+                `<div>
+                     Ecatepec a Salto del Agua
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_04f7fec287e3cfc7f1c3cdb06f287116 = L.polyline(
+                [[19.4231, -99.1444], [19.42828631909119, -99.14203208220889]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee8609e809df1fdd067c33dc4fe78b4c);
+        
+    
+            poly_line_04f7fec287e3cfc7f1c3cdb06f287116.bindTooltip(
+                `<div>
+                     Salto del Agua a Plaza Teresa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_51a331fed2ad1896470b2b069090208b = L.polyline(
+                [[19.42828631909119, -99.14203208220889], [19.428361719127313, -99.14890233500226]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee8609e809df1fdd067c33dc4fe78b4c);
+        
+    
+            poly_line_51a331fed2ad1896470b2b069090208b.bindTooltip(
+                `<div>
+                     Plaza Teresa a Plaza Teresa López
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_082f8486aa222f35b1179065b1ae081d = L.polyline(
+                [[19.428361719127313, -99.14890233500226], [19.4236, -99.1532]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee8609e809df1fdd067c33dc4fe78b4c);
+        
+    
+            poly_line_082f8486aa222f35b1179065b1ae081d.bindTooltip(
+                `<div>
+                     Plaza Teresa López a Metro Balderas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f9beb9886182c632071d5c61c4220daf = L.polyline(
+                [[19.4236, -99.1532], [19.601838, -99.036507]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_ee8609e809df1fdd067c33dc4fe78b4c);
+        
+    
+            poly_line_f9beb9886182c632071d5c61c4220daf.bindTooltip(
+                `<div>
+                     Balderas a Ecatepec
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
